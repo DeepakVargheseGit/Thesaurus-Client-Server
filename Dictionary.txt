@@ -1,0 +1,6 @@
+hello,hii,namaste
+find,search,lookup
+walk,stroll,run
+win,triumph,success
+story,novel,script
+final,climax,conclusion
