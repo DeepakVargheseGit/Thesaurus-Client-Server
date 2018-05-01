@@ -29,7 +29,7 @@ public class Client extends JFrame
  * synonym_area_client      = The area where the synonyms are displayed when found.
  * search                   = The button used to input the word.
  * Client_In_stream         = Used as the input stream client gets from server.
- * Client_Out_stream        = Used as the output stream client sends to server.
+ * Client_Out_stream        = Used as the output stream client sends to .
  * socket                   = Used to create socket connection.
  */
 	 private TextArea word_area_client = null;
@@ -68,7 +68,7 @@ public class Client extends JFrame
 		 search.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent arg0) {
 					String input =	word_area_client.getText(); // input stores the data written in word_area_client
-					System.out.println("ïnput from text area : "+input);
+					System.out.println("Ã¯nput from text area : "+input);
 					try {
 						if(input.equals("")) { // if client enters no data then the message is shown in synonym_area_client
 							synonym_area_client.setText("Enter word before searching !!");
@@ -97,7 +97,7 @@ public class Client extends JFrame
 		 Client_Out_stream = new DataOutputStream(socket.getOutputStream());
 		 
 		 String received_from_server = "";
-//		 while(received != "ënd")
+//		 while(received != "Ã«nd")
 //			{
 			 Client_Out_stream.writeUTF(inputWord); 
 			 //System.out.println("message send from client");
