@@ -29,7 +29,7 @@ public class Client extends JFrame
  * synonym_area_client      = The area where the synonyms are displayed when found.
  * search                   = The button used to input the word.
  * Client_In_stream         = Used as the input stream client gets from server.
- * Client_Out_stream        = Used as the output stream client sends to .
+ * Client_Out_stream        = Used as the output stream client sends to server.
  * socket                   = Used to create socket connection.
  */
 	 private TextArea word_area_client = null;
