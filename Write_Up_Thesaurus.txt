@@ -1,0 +1,101 @@
+***************************************************************************************************
+
+Author  - Deepak Varghese
+
+File    - Write_Up_Thesaurus.txt
+
+***************************************************************************************************
+
+
+
+
+
+Project Objective
+
+=============
+
+To implement a Thesaurus system using Client - Server Architecture. The client process will connect to the server and send the word that the user has selected in an input text box. The server will return a string that will contain alternative words that the user. Once the client has returned a result, it will allow the user to input another word to reference against the thesaurus.
+
+
+
+Modules
+
+=======
+
+The main modules are:
+
+1. The client module: A GUI created using JFrame and awt components. The GUI consist of Text area which lets the user to input the word , a Text Area to show the synonyms if found and a Button to initiate the connection and send the request to the server.
+
+2. The Server module: A GUI created using JFrame and awt components. The GUI consist of two Text areas - one to display the client request message and one to display the server response list.
+
+3. The File system: A Text file which contains the synonym words.
+
+
+The project is divided into 2 classes- Client and Server
+
+1.Client.java - The client program.
+
+   The class contains the client GUI creation, client server connection initiation and sending client request.
+
+2.Server.java - The server program.
+
+   The server class includes the Server GUI creation, socket creation, accepting connection from client, processing the client request- finding the synonym list from the file system.
+
+
+
+Execution
+
+========
+
+IDE used: Eclipse Version: Oxygen Release (4.7.0)
+1. The files Server.Java , Client.Java and Dictionary.txt all have to be under one source directory. 
+
+2. Run Server.java and Client.java as “Java Application” (Right click on files -Run As - Java Application). 
+
+3. In Client GUI (JFrame with title- Client) Enter a word manually in the text field.
+
+4. Click on Search button.
+
+5. The details are displayed in the server GUI (JFrame with title- Thesaurus Server) and the synonym list is populated in the Client GUI as well.
+
+6. Use the JFrame close option to close both GUI and hence the connections.
+
+
+
+TestData
+
+=======
+
+The implemented system handles the below types of input conditions-
+
+1. When the searched word has synonym present in the file system - Synonym List is returned.
+
+2. When the searched word does not have a synonym present in the file system - "Error.. No synonym found" is displayed.
+
+3. Search initiated without any word selection/word in the input text field - Error displayed is "Enter word before searching !!" and connection is not created.
+
+
+
+Limitations
+
+========
+
+*The file system contains only a limited number of words for synonym search.
+
+
+
+References
+
+=========
+
+1. https://github.com/martiniturbide/os2-cse5306-projects/blob/master/os2-cse5306-projects/lab1/src/cse/uta/edu/os2/server/ServerProg.java
+
+2. https://www.youtube.com/watch?v=fSQOhFYgE3s
+
+3. https://www.youtube.com/watch?v=3RNYUKxAgmw
+4. http://javatutorialhq.com/java/util/scanner-class-tutorial/findinline-string-pattern-method-example/
+
+
+
+    
+
